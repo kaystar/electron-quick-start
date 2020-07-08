@@ -9,7 +9,7 @@ var statusElement = document.getElementById("status");
 var currentlyPlaying = 1;
 var currentlPlayingTime;
 
-var src1 = "C:\Users\rocke\Downloads\oscar.mp4";
+var src1 = "C:\\Users\\rocke\\Downloads\\oscar.mp4";
 
 var src2 = "https://www.youtube.com/watch?v=TnXz_nnQZrw&t=186s";
 
