@@ -1,37 +1,67 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <link rel='stylesheet' href="style.css">
-    <title>Kevin's Electron App</title>
-  </head>
-  <body id="mybody">
-    <h1>Video switching application</h1>
-    <h2 id=demo></h2>
-    <div id="status">Now playing: video 1</div>
-    <div>
-      <video id="myVideo" controls autoplay loop class="myvideo">
+<html lang="en">
 
-        <source src="C:\Users\rocke\Downloads\oscar.mp4"
-                type="video/mp4">
-    
-        <!-- <source src="/media/examples/flower.mp4"
-                type="video/mp4"> -->
-    
-        Sorry, your browser doesn't support embedded videos.
-      </video>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Bare - Start Bootstrap Template</title>
+<!-- Green Sock -->
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_2.0.1_min.js"></script>
+<!-- Green Sock -->
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body id="mybody">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Video switching application</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+
+      </div>
     </div>
-      <button id="myButton">Toggle Video</button>
-      <script src="test.js"></script>
+  </nav>
 
 
-    <!-- <p id="demo"></p> -->
 
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
-  </body>
+  <div class="container" style="padding-top: 50px;">
+    <div class="row">
+      <div class="col-span-4" id="status">
+        <h4 id=demo>Now playing the home video</h4>
+      </div>
+      <div class="col-span-8">
+        <iframe id="myVideo" width="560" height="315" src="https://www.youtube.com/embed/7XhYS3WFt58?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <button id="myButton" type="button" class="btn btn-outline-primary">Toggle Video</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js" defer ></script> -->
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="test.js"></script>
+
+</body>
+
 </html>
-
