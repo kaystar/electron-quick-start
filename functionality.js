@@ -7,7 +7,7 @@ var statusElement = document.getElementById("demo");
 var currentlyPlaying = 1;
 var currentlPlayingTime;
 
-var src1 = "https://www.youtube.com/embed/7XhYS3WFt58?controls=0&autoplay=1&mute=0";
+var src1 = "https://www.youtube.com/embed/7XhYS3WFt58?controls=1&autoplay=1&mute=0";
 var src2 = "https://www.youtube.com/embed/I-EIVlHvHRM?autoplay=1&mute=0";
 var src3 = "https://www.youtube.com/embed/y3RIHnK0_NE?autoplay=1&mute=0";
 
@@ -70,9 +70,10 @@ function keyFunction() {
   }
 
 //   GSAP animation controls
+  TweenMax.from("#status", 1, { opacity: 0, x:-50, delay: 1.25});
   TweenMax.from("#controls", 1, {opacity:0, x:50, delay:1});
 
   function animate() {
-    TweenMax.from("#demo", 0.75, {opacity:0, y:-25, delay:1});
+    TweenMax.from("#demo", 0.5, {opacity:0, x:-25, delay:1});
 
   }
