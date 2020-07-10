@@ -22,3 +22,24 @@ body {
     flex-shrink: none;
     margin-top: 32em !important;
   }
+
+#num1 {
+    background: no-repeat url("./img/1.png") !important;
+	position:absolute;
+	width: 300px;
+	height: 250px;
+	left: 0px; 
+	top: 0px;
+	background-size: contain;
+}
+
+.controls {
+    /* background: no-repeat url("./img/1.png"); */
+	position:absolute;
+	width: 300px;
+	height: 250px;
+	left: 0px; 
+	top: 0px;
+	background-size: contain;
+}
+
