@@ -18,12 +18,21 @@ function clickFunction() {
   if (currentlyPlaying === 1) {
       vid.src = src2;
       currentlyPlaying = 2;
-      statusElement.innerText = 'Now playing video #2';
+      statusElement.innerText = 'Mouse clicked! Playing video #2';
       animate()
-  } else {
+  }
+  else if (currentlyPlaying === 2){
+    vid.src = src1;
+    currentlyPlaying = 1;
+    statusElement.innerText = 'Mouse clicked! playing video #1'
+    animate()
+    // TweenMax.to("#controls", 2, {opacity:0, x:50});
+
+}
+  else {
       vid.src = src1;
       currentlyPlaying = 1;
-      statusElement.innerText = 'Now playing video #1..';
+      statusElement.innerText = 'Mouse clicked! Playing video  #1';
       animate()
   }
 //   vid.load();
@@ -37,21 +46,21 @@ function keyFunction() {
     if (currentlyPlaying === 1) {
         vid.src = src3;
         currentlyPlaying = 3;
-        statusElement.innerText = 'Now playing video #3..';
+        statusElement.innerText = 'Keypress! Playing video #3';
         animate()
     } 
     else if (currentlyPlaying === 3){
         vid.src = src1;
         currentlyPlaying = 1;
-        statusElement.innerText = 'Now playing video #1'
+        statusElement.innerText = 'Keypress! playing video #1'
         animate()
         // TweenMax.to("#controls", 2, {opacity:0, x:50});
 
     }
     else {
-        vid.src = src2;
+        vid.src = src1;
         currentlyPlaying = 1;
-        statusElement.innerText = 'Now playing video #1..';
+        statusElement.innerText = 'Keypress! playing video #1';
         animate()
     }
     // vid.load();
@@ -60,6 +69,7 @@ function keyFunction() {
     }, false);
   }
 
+//   GSAP animation controls
   TweenMax.from("#controls", 1, {opacity:0, x:50, delay:1});
 
   function animate() {
