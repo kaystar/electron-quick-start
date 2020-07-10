@@ -1,4 +1,4 @@
-document.getElementById("myButton").addEventListener("click", myFunction);
+document.getElementById("mybody").addEventListener("click", myFunction);
 document.getElementById("mybody").addEventListener("keypress", myFunction2);
 
 (function(){
@@ -11,13 +11,13 @@ document.getElementById("mybody").addEventListener("keypress", myFunction2);
 // }
 
 var vid = document.getElementById("myVideo");
-var statusElement = document.getElementById("status");
+var statusElement = document.getElementById("demo");
 var currentlyPlaying = 1;
 var currentlPlayingTime;
 
-var src1 = "https://www.youtube.com/embed/7XhYS3WFt58?controls=0";
-var src2 = "https://www.youtube.com/embed/_yhtJLlvnwE";
-var src3 = "https://www.youtube.com/embed/R2pIutTspQA";
+var src1 = "https://www.youtube.com/embed/7XhYS3WFt58?controls=0&autoplay=1&mute=0";
+var src2 = "https://www.youtube.com/embed/_yhtJLlvnwE?autoplay=1&mute=0";
+var src3 = "https://www.youtube.com/embed/R2pIutTspQA?autoplay=1&mute=0";
 
 
 document.getElementById("myButton").addEventListener("click", console.log("test"));
@@ -49,7 +49,7 @@ function myFunction2() {
     else if (currentlyPlaying === 3){
         vid.src = src1;
         currentlyPlaying = 1;
-        statusElement.innerText = 'Going to paly video #1'
+        statusElement.innerText = 'Going to play video #1'
     }
     else {
         vid.src = src2;

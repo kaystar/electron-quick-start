@@ -22,7 +22,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Video switching application</a>
+      <a class="navbar-brand" href="#">Video switching application built on Electron</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -36,21 +36,31 @@
 
   <div class="container" style="padding-top: 50px;">
     <div class="row">
-      <div class="col-span-4" id="status">
+      <div class="col-span-12" id="status">
         <h4 id=demo>Now playing the home video</h4>
       </div>
+
+    </div>
+    <div class="row">
       <div class="col-span-8">
-        <iframe id="myVideo" width="560" height="315" src="https://www.youtube.com/embed/7XhYS3WFt58?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="myVideo" width="1280" height="720" src="https://www.youtube.com/embed/7XhYS3WFt58?controls=0&autoplay=1&mute=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
+    <div class="row">
+      <div class="col-span-8">
+        <h4> Controls:</h4><br>
+        <p><b>Left click: </b> Switches back and forth between video's <b>A</b> and <b> B</b></p><br>
+        <p><b>Keyboard Press: </b> Switches back and forth between video's <b>A</b> and <b> C</b></p>
 
+      </div>
+    </div>
   </div>
 
   <div class="container">
     <div class="row">
-      <div class="col">
+      <!-- <div class="col">
         <button id="myButton" type="button" class="btn btn-outline-primary">Toggle Video</button>
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -61,6 +71,12 @@
   <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="test.js"></script>
+
+  <footer id="sticky-footer" class="py-4 bg-dark text-white-50" style="margin-top: 32em;">
+    <div class="container text-center">
+      <small>Copyright &copy; Your Website</small>
+    </div>
+  </footer>
 
 </body>
 
