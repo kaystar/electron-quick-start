@@ -1,4 +1,4 @@
-body {
+#body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: auto;
     max-width: 38rem;
@@ -43,3 +43,7 @@ body {
 	background-size: contain;
 }
 
+.navbar-inverse .navbar-inner {
+    background-color: #586214;
+    background-image: none;
+    }

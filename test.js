@@ -18,12 +18,12 @@ function myFunction() {
   if (currentlyPlaying === 1) {
       vid.src = src2;
       currentlyPlaying = 2;
-      statusElement.innerText = 'Going to play video #2..';
+      statusElement.innerText = 'Now playing video #2';
       animate()
   } else {
       vid.src = src1;
       currentlyPlaying = 1;
-      statusElement.innerText = 'Going to play video #1..';
+      statusElement.innerText = 'Now playing video #1..';
       animate()
   }
 //   vid.load();
@@ -37,13 +37,13 @@ function myFunction2() {
     if (currentlyPlaying === 1) {
         vid.src = src3;
         currentlyPlaying = 3;
-        statusElement.innerText = 'Going to play video #3..';
+        statusElement.innerText = 'Now playing video #3..';
         animate()
     } 
     else if (currentlyPlaying === 3){
         vid.src = src1;
         currentlyPlaying = 1;
-        statusElement.innerText = 'Going to play video #1'
+        statusElement.innerText = 'Now playing video #1'
         animate()
         // TweenMax.to("#controls", 2, {opacity:0, x:50});
 
@@ -51,7 +51,7 @@ function myFunction2() {
     else {
         vid.src = src2;
         currentlyPlaying = 1;
-        statusElement.innerText = 'Going to play video #1..';
+        statusElement.innerText = 'Now playing video #1..';
         animate()
     }
     // vid.load();
